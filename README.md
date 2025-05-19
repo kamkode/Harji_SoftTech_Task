@@ -1,29 +1,98 @@
 # Product Catalog Microservice
 
-A Spring Boot microservice for managing product information with event publishing capabilities. This service provides REST APIs for product management and publishes events when products are created or updated.
+<div align="center">
+  <img src="https://img.shields.io/badge/Java-17-orange" alt="Java 17">
+  <img src="https://img.shields.io/badge/Spring%20Boot-3.2-brightgreen" alt="Spring Boot 3.2">
+  <img src="https://img.shields.io/badge/PostgreSQL-15-blue" alt="PostgreSQL 15">
+  <img src="https://img.shields.io/badge/Docker-Ready-blue" alt="Docker Ready">
+  <img src="https://img.shields.io/badge/License-Proprietary-red" alt="License">
+</div>
 
-## Tech Stack
+<div align="center">
+  <h3>A modern, event-driven microservice for product catalog management</h3>
+  <p>Developed by <b>Kamlesh</b></p>
+</div>
 
-- Java 17 (compatible with Java 21)
-- Spring Boot 3.2
-- PostgreSQL for data persistence
-- Event-driven architecture with GCP Pub/Sub (mock implementation)
-- Maven for dependency management and build
-- Docker & Docker Compose for containerization
-- OpenAPI/Swagger for API documentation
-- JUnit & Mockito for testing
+## 📋 Overview
 
-## Features
+This Spring Boot microservice provides REST APIs for product management and publishes events when products are created or updated. It's designed with modern cloud-native principles and follows best practices for microservice architecture.
 
-- RESTful API for product management
-- Event-driven architecture with multiple messaging options:
-  - Default: Simple event logging
-  - GCP Pub/Sub: Mock implementation
-- Containerized deployment with Docker
-- Comprehensive test coverage with unit and integration tests
-- API documentation with Swagger/OpenAPI
+## 🚀 Features
 
-## Getting Started
+<table>
+  <tr>
+    <td>
+      <h3>🔄 RESTful API</h3>
+      <ul>
+        <li>Create products (POST)</li>
+        <li>Update products (PUT)</li>
+        <li>Retrieve products (GET)</li>
+        <li>List all products (GET)</li>
+      </ul>
+    </td>
+    <td>
+      <h3>📊 Data Management</h3>
+      <ul>
+        <li>PostgreSQL persistence</li>
+        <li>JPA repositories</li>
+        <li>Transaction management</li>
+        <li>Data validation</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h3>📢 Event Publishing</h3>
+      <ul>
+        <li>Event-driven architecture</li>
+        <li>GCP Pub/Sub integration (mock)</li>
+        <li>Structured event format</li>
+      </ul>
+    </td>
+    <td>
+      <h3>🧪 Testing</h3>
+      <ul>
+        <li>Unit tests</li>
+        <li>Integration tests</li>
+        <li>Test utilities</li>
+        <li>Coverage reporting</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h3>🐳 Containerization</h3>
+      <ul>
+        <li>Docker support</li>
+        <li>Docker Compose</li>
+        <li>Multi-stage builds</li>
+        <li>Environment configuration</li>
+      </ul>
+    </td>
+    <td>
+      <h3>📚 Documentation</h3>
+      <ul>
+        <li>OpenAPI/Swagger</li>
+        <li>API testing guide</li>
+        <li>Setup instructions</li>
+        <li>Architecture overview</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+## 🛠️ Tech Stack
+
+- **Java 17** (compatible with Java 21)
+- **Spring Boot 3.2**
+- **PostgreSQL** for data persistence
+- **Event-driven architecture** with GCP Pub/Sub (mock implementation)
+- **Maven** for dependency management and build
+- **Docker & Docker Compose** for containerization
+- **OpenAPI/Swagger** for API documentation
+- **JUnit & Mockito** for testing
+
+## 🏁 Getting Started
 
 ### Prerequisites
 
@@ -38,8 +107,8 @@ A Spring Boot microservice for managing product information with event publishin
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/your-username/product-catalog-service.git
-cd product-catalog-service
+git clone https://github.com/kamkode/Harji_SoftTech_Task.git
+cd Harji_SoftTech_Task
 ```
 
 2. **Configure PostgreSQL**
@@ -77,7 +146,7 @@ This will start:
 
 The application will be available at http://localhost:8080
 
-## Event Publishing
+## 📢 Event Publishing
 
 The application supports multiple event publishing mechanisms:
 
@@ -96,8 +165,6 @@ To use the GCP Pub/Sub mock implementation:
 
 2. When running with Docker Compose, the Pub/Sub emulator is automatically started and configured.
 
-
-
 ### Event Structure
 
 All events follow this structure:
@@ -110,7 +177,7 @@ All events follow this structure:
 }
 ```
 
-## API Usage
+## 💻 API Usage
 
 ### Swagger UI
 
@@ -158,7 +225,7 @@ curl -X GET http://localhost:8080/products/{productId}
 curl -X GET http://localhost:8080/products
 ```
 
-## Testing
+## 🧪 Testing
 
 The project includes both unit tests and integration tests.
 
@@ -202,7 +269,7 @@ run_tests.bat -i            # Run only integration tests
 run_tests.bat -c            # Generate test coverage report
 ```
 
-## Utility Scripts
+## 🔧 Utility Scripts
 
 The project includes several utility scripts to help with development and deployment:
 
@@ -248,7 +315,7 @@ docker_operations.bat clean    # Remove all containers and volumes
 
 The `git_commands.sh` script provides a reference for how to commit and push the project with proper commit messages.
 
-## Project Structure
+## 📂 Project Structure
 
 ```
 src/
@@ -276,7 +343,7 @@ src/
 └── scripts/                     # Utility scripts
 ```
 
-## Design Decisions
+## 📚 Design Decisions
 
 ### Event-Driven Architecture
 
@@ -295,6 +362,13 @@ The project follows clean architecture principles with clear separation of conce
 
 The service includes a global exception handler that provides consistent error responses across all endpoints.
 
-## License
+## 📜 License
 
 This project is proprietary and confidential. Unauthorized copying, distribution, or use is strictly prohibited.
+
+---
+
+<div align="center">
+  <p>Developed with ❤️ by <b>Kamlesh</b></p>
+  <p>© 2025 All Rights Reserved</p>
+</div>
